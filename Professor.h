@@ -7,11 +7,11 @@ using namespace std;
 class Professor
 {
   private:
-    string name;
-    string address;
-    string email;
+    std::string name;
+    std::string address;
+    std::string email;
     int ssn;
-    string department;
+    std::string department;
    
   public:
     void setName(string);
