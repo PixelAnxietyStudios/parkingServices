@@ -1,25 +1,6 @@
 #include "Professor.h"
 #include <string>
 
-{
-  private:
-    string name;
-    string address;
-    string email;
-    int ssn;
-    string department;
-   
-  public:
-    void setName(string);
-    void setAddress(string);
-    void setEmail(string);
-    void setSSN(int);
-    void setDepartment(string);
-    string getName();
-    string getAddress();
-    string getEmail();
-    int getSSN();
-    string getDepartment();
 
   void Professor::setName(string tempName)
   {
