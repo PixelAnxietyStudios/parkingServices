@@ -1,25 +1,5 @@
 #include "Motorcycle.h"
 
-  private:
-    string make;
-    string model;
-    int year;
-    double mpg;
-    int tires;
-  
-  public:
-    void setMake(string);
-    void setModel(string);
-    void setYear(int);
-    void setMPG(double);
-    void setTires(int);
-    string getMake();
-    string getModel();
-    int getYear();
-    double getMPG();
-    int getTires();
-  
-
 void setMake(string tempMake){
   make = tempMake;
 }
