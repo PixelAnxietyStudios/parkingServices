@@ -7,9 +7,9 @@ using namespace std;
 class Professor
 {
   private:
-    std::string name;
-    std::string address;
-    std::string email;
+    String name;
+    String address;
+    String email;
     int ssn;
     std::string department;
    
