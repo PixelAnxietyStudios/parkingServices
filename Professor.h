@@ -4,7 +4,7 @@
 #include <string>
 using namespace std;
 
-Class Professor
+class Professor
 {
   private:
     string name;
