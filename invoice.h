@@ -8,11 +8,11 @@ class Invoice
 private:
   double price {0.0};
   double discount {0.0};
-  double service {10.0};
+  double serviceFee {10.0};
   
 public:
   Invoice() = default;
-  Invoice(double p, double d, double s) : price{p}, discount{d}, service{s};
+  Invoice(double p, double d, double s) : price{p}, discount{d}, serviceFee{s};
   double calcTotalPrice();
   void outputInvoice();
 };
