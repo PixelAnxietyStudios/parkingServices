@@ -1,4 +1,6 @@
 #include "Motorcycle.h"
+#include <iostream>
+using namespace std;
 
 void Motorcycle::setMake(string tempMake){
   make = tempMake;
