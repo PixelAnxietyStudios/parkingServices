@@ -10,7 +10,7 @@ class LowEmission
         LowEmission() = default;
         LowEmission(char e) : electric{e} {}
         void setMake(string m)
-            { string = m; }
+            { make = m; }
         void setModel(string m)
             { model = m; }
         void setYear(int y)
@@ -36,3 +36,5 @@ class LowEmission
         char electric {'n'};
         double miles;
 };
+
+#endif
