@@ -1,5 +1,6 @@
 #include "Professor.h"
-
+#include <iostream>
+using namespace std;
 
   void Professor::setName(string tempName)
   {
