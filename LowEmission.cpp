@@ -1,6 +1,6 @@
 #include "LowEmission.h"
 
-void setElectric(char e)
+void LowEmission::setElectric(char e)
 {
     if (e == 'y' || e == 'n')
     {
