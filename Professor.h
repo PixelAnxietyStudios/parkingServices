@@ -2,15 +2,16 @@
 #define Professor_h
 
 #include <string>
+using namespace std;
 
 class Professor
 {
   private:
-    std::string name;
-    std::string address;
-    std::string email;
+    string name;
+    string address;
+    string email;
     int ssn;
-    std::string department;
+    string department;
    
   public:
     void setName(string);
@@ -18,11 +19,11 @@ class Professor
     void setEmail(string);
     void setSSN(int);
     void setDepartment(string);
-    std::string getName();
-    std::string getAddress();
-    std::string getEmail();
+    string getName();
+    string getAddress();
+    string getEmail();
     int getSSN();
-    std::string getDepartment();
+    string getDepartment();
   
 };
 
