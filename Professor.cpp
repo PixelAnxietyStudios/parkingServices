@@ -1,5 +1,4 @@
 #include "Professor.h"
-#include <string>
 
 
   void Professor::setName(string tempName)
