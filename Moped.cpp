@@ -1,5 +1,6 @@
 // function definitions for student class
 #include <iostream>
+#include <string>
 #include "Moped.h"
 
 using namespace std;
