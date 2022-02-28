@@ -2,6 +2,7 @@
 #define Motorcycle_h
 
 #include <string>
+using namespace std;
 
 class Motorcycle
 {
@@ -25,7 +26,7 @@ class Motorcycle
     double getMPG();
     int getTires();
   
-}
+};
 
 #endif /*Motorcycle_h*/
 
