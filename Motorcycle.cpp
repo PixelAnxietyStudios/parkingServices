@@ -52,5 +52,5 @@ double Motorcycle::getMPG(){
 }
 
 int Motorcycle::getTires(){
-  reutnr tires;
+  return tires;
 }
