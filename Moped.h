@@ -24,6 +24,6 @@ public:
   string getYear();
   string getCc();
   bool getLegal();
-}
+};
 
 #endif
