@@ -14,9 +14,7 @@ void Motorcycle::setYear(int tempYear){
     cout << "Please enter a valid input" << endl;
     cin >> tempYear;
   }
- 
-    year = tempYear;
-  }
+  year = tempYear;
 }
 
 void Motorcycle::setMPG(double tempMPG){
