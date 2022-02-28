@@ -24,6 +24,6 @@ public:
   string getAddress();
   string getDriverLicense();
   bool getCampusLocation();
-}
+};
 
 #endif
