@@ -8,8 +8,7 @@ class Visitor
 {
     public:
         Visitor() = default;
-        Visitor(char s, char a) : side{s}, alumni{a} {}
-
+        Visitor(char, char);
         void setName(string n)
         { name = n; }
         void setAddress(string a)
@@ -33,8 +32,8 @@ class Visitor
         string name,
             address,
             email;
-        char side {'w'},
-            alumni {'n'}; 
+        char side {'w'};
+        bool alumni {false}; 
 };
 
 #endif
