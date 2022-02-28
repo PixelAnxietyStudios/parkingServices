@@ -10,9 +10,10 @@ private:
     email,
     address,
     driverLicense;
-  char campusLocation;
+  bool campusLocation {false};
 
 public:
+  Student() = default;
   void setName(string);
   void setEmail(string);
   void setAddress(string);
@@ -22,7 +23,7 @@ public:
   string getEmail();
   string getAddress();
   string getDriverLicense();
-  char getCampusLocation();
+  bool getCampusLocation();
 }
 
 #endif
