@@ -2,6 +2,7 @@
 #define LOWEMISSION_H
 
 #include <string>
+using namespace std;
 
 class LowEmission
 {
