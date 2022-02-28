@@ -8,7 +8,8 @@ class LowEmission
 {
     public:
         LowEmission() = default;
-        LowEmission(char e) : electric{e} {}
+        LowEmission(char e)
+            { setElectric(e); }
         void setMake(string m)
             { make = m; }
         void setModel(string m)
@@ -24,7 +25,7 @@ class LowEmission
             { return model; }
         int getYear()
             { return year; }
-        char getElectric()
+        bool getElectric()
             { return electric; }
         double getMiles()
             { return miles; }
@@ -33,7 +34,7 @@ class LowEmission
         string make,
             model;
         int year;
-        char electric {'n'};
+        bool electric {false};
         double miles;
 };
 
