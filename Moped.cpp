@@ -22,7 +22,10 @@ void Moped::setCc(string c){
 }
 
 void Moped::setLegal(char l){
-  l = legal;
+  if (l == 'y' || l == 'Y')
+  { legal = true; }
+  else
+  { legal = false; }
 }
 
 string Moped::getMake(){
@@ -41,6 +44,6 @@ string Moped::getCc(){
   return cc;
 }
 
-char Moped::getLegal(){
+bool Moped::getLegal(){
   return legal;
 }
