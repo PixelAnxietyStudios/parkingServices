@@ -1,9 +1,12 @@
 #ifndef MOPED_H_
 #define MOPED_H_
 
+#include <string>
+using namespace std;
+
 class Moped {
 private:
-  std::string make,
+  string make,
     model,
     year,
     cc;
@@ -15,10 +18,10 @@ public:
   void setYear(string);
   void setCc(string);
   void setLegal(char);
-  std::string getMake();
-  std::string getModel();
-  std::string getYear();
-  std::string getCc();
+  string getMake();
+  string getModel();
+  string getYear();
+  string getCc();
   char getLegal();
 }
 
