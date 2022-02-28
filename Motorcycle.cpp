@@ -1,41 +1,48 @@
 #include "Motorcycle.h"
 
-void setMake(string tempMake){
+void Motorcycle::setMake(string tempMake){
   make = tempMake;
 }
 
-void setModel(string tempModel){
+void Motorcycle::setModel(string tempModel){
   model = tempModel;
 }
 
-void setYear(int tempYear){
-  year = tempYear 
+void Motorcycle::setYear(int tempYear){
+  
+  while (tempYear < 0){
+    cout << "Please enter a valid input" << endl;
+    cin >> tempYear;
+  }
+ 
+    year = tempYear;
+  }
 }
 
-void setMPG(double tempMPG){
+void Motorcycle::setMPG(double tempMPG){
   mph = tempMPG; 
 }
 
-void setTires(int tempTires){
+void Motorcycle::setTires(int tempTires){
   tires = tempTires;
 }
 
-string getMake(){
+string Motorcycle::getMake(){
   return make; 
 }
 
-string getModel(){
+string Motorcycle::getModel(){
   return model;
 }
 
-int getYear(){
+int Motorcycle::getYear(){
   return year;
 }
 
-double getMPG(){
+double Motorcycle::getMPG(){
   return mpg;
 }
 
-int getTires(){
+int Motorcycle::getTires(){
   reutnr tires;
 }
