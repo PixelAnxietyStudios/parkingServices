@@ -1,6 +1,6 @@
 #include "Visitor.h"
 
-void setSide(char s)
+void Visitor::setSide(char s)
 {
     if (s == 'w' || s == 'e')
     {
@@ -12,7 +12,7 @@ void setSide(char s)
     }
 }
 
-void setAlumni(char a)
+void Visitor::setAlumni(char a)
 {
     if (a == 'y' || a == 'n')
     {
