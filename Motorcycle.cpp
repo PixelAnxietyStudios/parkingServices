@@ -18,10 +18,20 @@ void Motorcycle::setYear(int tempYear){
 }
 
 void Motorcycle::setMPG(double tempMPG){
-  mph = tempMPG; 
+  
+  while (tempMPG < 0){
+    cout << "Please enter a valid input" << endl;
+    cin >> tempMPG;
+  }
+  mpg = tempMPG; 
 }
 
 void Motorcycle::setTires(int tempTires){
+  
+  while (tempTires < 0){
+    cout << "Please enter a valid input" << endl;
+    cin >> tempTires;
+  }
   tires = tempTires;
 }
 
