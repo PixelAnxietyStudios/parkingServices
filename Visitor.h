@@ -2,6 +2,7 @@
 #define VISITOR_H
 
 #include <string>
+using namespace std;
 
 class Visitor
 {
