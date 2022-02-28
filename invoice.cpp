@@ -5,7 +5,7 @@
 cout << fixed << setPrecision(2);
 double invoice::calcTotalPrice(){
   
-  price = (price + service)* discount;
+  price = (price + serviceFee)* discount;
   return price;
 }
 
