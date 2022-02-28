@@ -22,7 +22,10 @@ void Student::setDriverLicense(string license){
 }
 
 void Student::setCampusLocation(char camp){
-  camp = campusLocation;
+  if (camp == 'y' || camp == 'Y')
+    { campusLocation = true; }
+  else
+  { campusLocation = false; }
 }
 
 string Student::getName(){
@@ -41,6 +44,6 @@ string Student::getDriverLicense(){
   return driverLicense;
 }
 
-char Student::getCampusLocation(){
+bool Student::getCampusLocation(){
   return campusLocation;
 }
