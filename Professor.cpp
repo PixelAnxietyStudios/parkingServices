@@ -19,6 +19,12 @@
   
   void Professor::setSSN(int tempSSN)
   {
+    
+    while (tempSSN < 0){
+      cout << "Please enter a valid input" << endl;
+      cin >> tempSSN;
+    }
+      
     ssn = tempSSN;
     
   }
