@@ -3,7 +3,7 @@
 
 class Student {
 private:
-  string name,
+  std::string name,
     email,
     address,
     driverLicense;
@@ -15,10 +15,10 @@ public:
   void setAddress(string);
   void setDriverLicense(string);
   void setCampusLocation(char);
-  string getName();
-  string getEmail();
-  string getAddress();
-  string getDriverLicense();
+  std::string getName();
+  std::string getEmail();
+  std::string getAddress();
+  std::string getDriverLicense();
   char getCampusLocation();
 }
 
