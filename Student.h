@@ -1,9 +1,12 @@
 #ifndef STUDENT_H_
 #define STUDENT_H_
 
+#include <string>
+using namespace std;
+
 class Student {
 private:
-  std::string name,
+  string name,
     email,
     address,
     driverLicense;
@@ -15,10 +18,10 @@ public:
   void setAddress(string);
   void setDriverLicense(string);
   void setCampusLocation(char);
-  std::string getName();
-  std::string getEmail();
-  std::string getAddress();
-  std::string getDriverLicense();
+  sstring getName();
+  string getEmail();
+  string getAddress();
+  string getDriverLicense();
   char getCampusLocation();
 }
 
