@@ -3,7 +3,7 @@
 
 class Moped {
 private:
-  string make,
+  std::string make,
     model,
     year,
     cc;
@@ -15,10 +15,10 @@ public:
   void setYear(string);
   void setCc(string);
   void setLegal(char);
-  string getMake();
-  string getModel();
-  string getYear();
-  string getCc();
+  std::string getMake();
+  std::string getModel();
+  std::string getYear();
+  std::string getCc();
   char getLegal();
 }
 
