@@ -10,9 +10,10 @@ private:
     model,
     year,
     cc;
-  char legal;
+  bool legal {false};
 
 public:
+  Moped() = default;
   void setMake(string);
   void setModel(string);
   void setYear(string);
@@ -22,7 +23,7 @@ public:
   string getModel();
   string getYear();
   string getCc();
-  char getLegal();
+  bool getLegal();
 }
 
 #endif
