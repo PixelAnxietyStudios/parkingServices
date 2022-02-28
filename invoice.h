@@ -14,7 +14,7 @@ public:
   Invoice() = default;
   Invoice(double p, double d, double s) : price{p}, discount{d}, service{s};
   double calcTotalPrice();
-  void outputInvoice;
+  void outputInvoice();
 };
 
 #endif /*invoice_h*/
