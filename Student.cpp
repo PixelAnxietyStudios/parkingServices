@@ -1,4 +1,4 @@
-// function definitions for student class by Raymond Purdy
+// function definitions for student class
 #include <iostream>
 #include <string>
 #include "Student.h"
@@ -48,9 +48,6 @@ bool Student::getCampusLocation(){
   return campusLocation;
 }
 
-
-// returns a string containing all the nformation provided  by the user with labels
-// pass this into invoice to print it
 string Student::studentInfo(){
   string info = "Name: ";
   info.append(name);
@@ -60,12 +57,10 @@ string Student::studentInfo(){
   info.append(address);
   info += "\nDriver's License Number: ";
   info.append(driverLicense);
-  switch (campusLocation){
-    case true:
+    if (campusLocation == true) {
       info += "\nOn Campus: yes";
-      break;
-    case false:
+    } else {
       info += "\nOn campus: no";
-  }
+    }
   return info;
 }
