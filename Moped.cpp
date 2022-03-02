@@ -48,8 +48,6 @@ bool Moped::getLegal(){
   return legal;
 }
 
-// returns a string containing all the nformation provided  by the user with labels
-// pass this into invoice to print it
 string Moped::mopedInfo(){
   string info = "Make: ";
   info.append(make);
@@ -59,13 +57,10 @@ string Moped::mopedInfo(){
   info.append(year);
   info += "\nCC: ";
   info.append(cc);
-  switch (legal){
-    case true:
+    if (legal == true) {
       info += "\nStreet Legal: yes";
-      break;
-    case false:
+    }else {
       info += "\nStreet Legal: no";
-  }
+    }
   return info;
 }
-
