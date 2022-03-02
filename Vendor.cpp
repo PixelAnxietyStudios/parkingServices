@@ -18,3 +18,15 @@ string Vendor::getEmail() {return email;}
 string Vendor::getAddress() {return address;}
 string Vendor::getCompanyName() {return companyName;}
 string Vendor::getproduct() {return product;}
+string Vendor::vendorInfo(){
+  string info = "Name: ";
+  info.append(name);
+  info += "\nEmail: ";
+  info.append(email);
+  info += "\nAddress: ";
+  info.append(address);
+  info += "\nCompany Name: ";
+  info.append(companyName);
+  info += "\nProduct/Service: ";
+  info.append(product);
+  }
