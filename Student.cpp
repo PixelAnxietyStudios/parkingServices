@@ -6,19 +6,19 @@
 using namespace std;
 
 void Student::setName(string n){
-  n = name;
+  name.assign(n);
 }
 
 void Student::setEmail(string e){
-  e = email;
+email.assign(e);
 }
 
 void Student::setAddress(string add){
-  add = address;
+  address.assign(add);
 }
 
 void Student::setDriverLicense(string license){
-  license = driverLicense;
+  driverLicense.assign(license);
 }
 
 void Student::setCampusLocation(char camp){
@@ -46,4 +46,23 @@ string Student::getDriverLicense(){
 
 bool Student::getCampusLocation(){
   return campusLocation;
+}
+
+string Student::studentInfo(){
+  string info = "Name: ";
+  info.append(name);
+  info += "\nEmail: ";
+  info.append(email);
+  info += "\nAddress: ";
+  info.append(address);
+  info += "\nDriver's License Number: ";
+  info.append(driverLicense);
+  switch (campusLocation){
+    case true:
+      info += "\nOn Campus: yes";
+      break;
+    case false:
+      info += "\nOn campus: no";
+  }
+  return info;
 }
