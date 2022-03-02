@@ -50,7 +50,7 @@ bool Moped::getLegal(){
 
 // returns a string containing all the nformation provided  by the user with labels
 // pass this into invoice to print it
-string Moped::MopedInfo(){
+string Moped::mopedInfo(){
   string info = "Make: ";
   info.append(make);
   info += "\nModel: ";
