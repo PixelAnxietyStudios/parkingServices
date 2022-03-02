@@ -1,4 +1,4 @@
-// function definitions for student class
+// function definitions for student class by Raymond Purdy
 #include <iostream>
 #include <string>
 #include "Student.h"
