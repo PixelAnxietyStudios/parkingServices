@@ -48,6 +48,9 @@ bool Student::getCampusLocation(){
   return campusLocation;
 }
 
+
+// returns a string containing all the nformation provided  by the user with labels
+// pass this into invoice to print it
 string Student::studentInfo(){
   string info = "Name: ";
   info.append(name);
