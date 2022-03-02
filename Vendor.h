@@ -29,6 +29,7 @@ public:
     string getAddress();
     string getCompanyName();
     string getproduct();
+    string vendorInfo();
 };
 
 
