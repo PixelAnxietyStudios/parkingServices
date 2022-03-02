@@ -31,6 +31,7 @@ public:
     string getLicensePlate();
     bool getDisabled();
     string getColor();
+    string carInfo();
 };
 
 #endif /* Car_h */
