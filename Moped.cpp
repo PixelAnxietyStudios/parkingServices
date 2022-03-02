@@ -1,4 +1,4 @@
-// function definitions for student class
+// moped function class definitions by Raymond Purdy
 #include <iostream>
 #include <string>
 #include "Moped.h"
@@ -6,19 +6,19 @@
 using namespace std;
 
 void Moped::setMake(string ma){
-  ma = make;
+  make.assign(ma);
 }
 
 void Moped::setModel(string mod){
-  mod = model;
+  model.assign(mod);
 }
 
 void Moped::setYear(string y){
-  y = year;
+  year.assign(y);
 }
 
 void Moped::setCc(string c){
-  c = cc;
+  cc.assign(c);
 }
 
 void Moped::setLegal(char l){
@@ -47,3 +47,23 @@ string Moped::getCc(){
 bool Moped::getLegal(){
   return legal;
 }
+
+string Moped::MopedInfo(){
+  string info = "Make: ";
+  info.append(make);
+  info += "\nModel: ";
+  info.append(model);
+  info += "\nYear: ";
+  info.append(year);
+  info += "\nCC: ";
+  info.append(cc);
+  switch (legal){
+    case true:
+      info += "\nStreet Legal: yes";
+      break;
+    case false:
+      info += "\nStreet Legal: no";
+  }
+  return info;
+}
+
