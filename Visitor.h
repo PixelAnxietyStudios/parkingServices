@@ -27,6 +27,7 @@ class Visitor
         { return side; }
         char getAlumni()
         { return alumni; }
+        string visitorInfo();
     
     private:
         string name,
