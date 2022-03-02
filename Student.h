@@ -1,3 +1,4 @@
+// student class by Raymond Purdy
 #ifndef STUDENT_H_
 #define STUDENT_H_
 
