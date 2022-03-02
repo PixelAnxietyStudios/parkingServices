@@ -25,7 +25,7 @@ class Motorcycle
     int getYear();
     double getMPG();
     int getTires();
-    string motorcycleInfo()
+    string motorcycleInfo();
   
 };
 
