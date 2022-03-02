@@ -6,10 +6,10 @@ using namespace std;
 
 class Student {
 private:
-  string name,
-    email,
-    address,
-    driverLicense;
+  string name {""},
+    email {""},
+    address {""},
+    driverLicense {""};
   bool campusLocation {false};
 
 public:
@@ -19,11 +19,12 @@ public:
   void setAddress(string);
   void setDriverLicense(string);
   void setCampusLocation(char);
-  sstring getName();
+  string getName();
   string getEmail();
   string getAddress();
   string getDriverLicense();
   bool getCampusLocation();
+  string studentInfo();
 };
 
 #endif
