@@ -31,3 +31,23 @@ int Car::getYear() {return year;}
 string Car::getLicensePlate() {return licensePlate;}
 bool Car::getDisabled() {return disabled;}
 string Car::getColor() {return color;}
+string Car::carInfo(){
+  string info = "Make: ";
+  info.append(make);
+  info += "\nModel: ";
+  info.append(model);
+  info += "\nYear: ";
+  info.append(year);
+  info += "\nLicense Plate: ";
+  info.append(licensePlate);
+  switch (disabled){
+    case true:
+      info += "\nDisabled: yes";
+      break;
+    case false:
+      info += "\nDisabled: no";
+  }
+  info += "\nColor: ";
+  info.append(color);
+  return info;
+}
