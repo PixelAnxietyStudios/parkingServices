@@ -27,6 +27,8 @@ class LowEmission
             { return electric; }
         double getMiles()
             { return miles; }
+        string lowEmissionInfo();
+        
 
     private:
         string make,
