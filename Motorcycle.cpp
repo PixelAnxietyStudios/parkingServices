@@ -56,3 +56,17 @@ double Motorcycle::getMPG(){
 int Motorcycle::getTires(){
   return tires;
 }
+
+string Motorcycle::motorcycleInfo(){
+  string info = "Make: ";
+  info.append(make);
+  info += "\nModel: ";
+  info.append(model);
+  info += "\nYear: ";
+  info.append(year);
+  info += "\nMPG: ";
+  info.append(MPG);
+  info += "\nTires: ";
+  info.append(tires);
+  return info;
+}
