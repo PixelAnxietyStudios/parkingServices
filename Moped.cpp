@@ -13,7 +13,7 @@ void Moped::setModel(string mod){
   model.assign(mod);
 }
 
-void Moped::setYear(string y){
+void Moped::setYear(int y){
   year.assign(y);
 }
 
@@ -36,7 +36,7 @@ string Moped::getModel(){
   return model;
 }
 
-string Moped::getYear(){
+int Moped::getYear(){
   return year;
 }
 
