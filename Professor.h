@@ -10,19 +10,19 @@ class Professor
     string name;
     string address;
     string email;
-    int ssn;
+    string ssn;
     string department;
    
   public:
     void setName(string);
     void setAddress(string);
     void setEmail(string);
-    void setSSN(int);
+    void setSSN(string);
     void setDepartment(string);
     string getName();
     string getAddress();
     string getEmail();
-    int getSSN();
+    string getSSN();
     string getDepartment();
   
 };
