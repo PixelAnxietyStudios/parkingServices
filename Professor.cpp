@@ -17,16 +17,9 @@ using namespace std;
     email = tempEmail;
   }
   
-  void Professor::setSSN(int tempSSN)
+  void Professor::setSSN(string tempSSN)
   {
-    
-    while (tempSSN < 0){
-      cout << "Please enter a valid input" << endl;
-      cin >> tempSSN;
-    }
-      
     ssn = tempSSN;
-    
   }
   
   void Professor::setDepartment(string tempDepartment)
@@ -52,7 +45,7 @@ using namespace std;
     
   }
   
-  int Professor::getSSN()
+  string Professor::getSSN()
   {
     return ssn;
    
