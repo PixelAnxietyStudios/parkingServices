@@ -9,19 +9,19 @@ class Moped {
 private:
   string make {""},
     model {""},
-    year {""},
     cc {""};
+  int year;
   bool legal {false};
 public:
   Moped() = default;
   void setMake(string);
   void setModel(string);
-  void setYear(string);
+  void setYear(int);
   void setCc(string);
   void setLegal(char);
   string getMake();
   string getModel();
-  string getYear();
+  int getYear();
   string getCc();
   bool getLegal();
   string mopedInfo();
